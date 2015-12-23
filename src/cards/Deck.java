@@ -33,6 +33,8 @@ public abstract class Deck {
         return (hand);
     }
 
+    public abstract void reshuffle();
+
     private static Card[] _make_def_deck() {
         Card[] def_deck = new Card[52];
 

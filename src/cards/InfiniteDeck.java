@@ -12,4 +12,6 @@ final class InfiniteDeck extends Deck {
         return (def_deck[(int)(Math.random() * def_deck.length)]);
     }
 
+    @Override
+    public void reshuffle() { /* DO NOTHING */ }
 }

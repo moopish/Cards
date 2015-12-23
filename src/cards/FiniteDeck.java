@@ -26,6 +26,11 @@ final class FiniteDeck extends Deck {
         return (deck[--remain]);
     }
 
+    @Override
+    public void reshuffle() {
+        _shuffle(count);
+    }
+
     private void _shuffle(int count) {
         deck = new Card[count * def_deck.length];
         remain = deck.length;
