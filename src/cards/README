@@ -1,0 +1,22 @@
+CARDS
+
+  These classes are related to dealing with cards and decks of cards
+
+  Card
+
+    This class represents a card. Cannot be instantiated outside of this package.
+  Cards are setup such that all possible cards are stored within a single array and
+  those cards are shuffled into decks. Only one instance of a particular card
+  exists.
+
+  Deck
+
+    This is an abstract class that store information on a deck. To get a deck a call
+  must be made to createDeck() or createDeck(int). These methods will get on of the
+  two following:
+
+    FiniteDeck : A deck where each card is limited to be drawn x times where x is the
+                number of 52 card decks used. Each card of the deck must be used
+                before x+1 of that card can be drawn.
+
+    InfiniteDeck : Any card can be drawn with equal probability for each draw.
