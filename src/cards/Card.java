@@ -6,8 +6,8 @@ package cards;
  */
 public final class Card {
 
-    private final Suit suit;
-    private final FaceValue value;
+    public final Suit suit;
+    public final FaceValue value;
 
     protected Card(Suit suit, FaceValue value) {
         this.suit = suit;
