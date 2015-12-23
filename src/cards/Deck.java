@@ -40,7 +40,7 @@ public abstract class Deck {
 
         for (Suit s : Suit.values())
             for (FaceValue f : FaceValue.values())
-                def_deck[s.value * f.COUNT + f.value] = new Card(s, f);
+                def_deck[s.index * f.COUNT + f.index] = new Card(s, f);
 
         return (def_deck);
     }
